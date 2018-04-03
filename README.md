@@ -1,1 +1,1 @@
-# lelton_target
+# myRetail RESTful Service
