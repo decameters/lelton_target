@@ -12,4 +12,4 @@ var myRetailSchema = new Schema({
      }
 });
 
-module.exports = mongoose.model('items', myRetailSchema);
+module.exports = mongoose.model('products', myRetailSchema);

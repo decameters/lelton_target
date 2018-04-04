@@ -1,18 +1,18 @@
 app.service('MyRetailService', ['$http', function ($http) {
     var self = this;
 
-    self.items = { list: [] };
+    self.products = { list: [] };
 
     // self.moviedetail = { list: [] };
 
-    self.getItems = function () {
+    self.getProducts = function () {
 
         $http({
             method: 'GET',
-            url: '/items'
+            url: '/products'
         }).then(function (response) {
             console.log('response', response);
-            self.items.list = response.data;
+            self.products.list = response.data;
         })
     }
 

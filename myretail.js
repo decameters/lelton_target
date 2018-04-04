@@ -1,8 +1,8 @@
 use myRetail;
 
-db.createCollection('items');
+db.createCollection('products');
 
-db.items.insert({
+db.products.insert({
     id : 13860428 ,
     title : "TRON" ,
     current_price : {
@@ -11,7 +11,7 @@ db.items.insert({
     }
 });
 
-db.items.insert({
+db.products.insert({
     id : 15117729 ,
     title : "Hearts of the West" ,
     current_price : {
@@ -20,7 +20,7 @@ db.items.insert({
     }
 });
 
-db.items.insert({
+db.products.insert({
     id : 16483589 ,
     title : "The Last Unicorn" ,
     current_price : {
@@ -29,7 +29,7 @@ db.items.insert({
     }
 });
 
-db.items.insert({
+db.products.insert({
     id : 16696652 ,
     title : "The Fabulous Baker Boys" ,
     current_price : {
@@ -38,7 +38,7 @@ db.items.insert({
     }
 });
 
-db.items.insert({
+db.products.insert({
     id : 16752456 ,
     title : "White Squall" ,
     current_price : {
@@ -47,7 +47,7 @@ db.items.insert({
     }
 });
 
-db.items.insert({
+db.products.insert({
     id : 15643793 ,
     title : "Seabiscuit" ,
     current_price : {
