@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>myRetail</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="vendors/angular.js"></script>
     <script src="vendors/angular-route.js"></script>
     <script src="scripts/client.js"></script>
 
     <!-- controllers-->
+    <script src="scripts/controllers/myretail.controller.js"></script>
 
     <!-- services -->
+    <script src="scripts/services/myretail.service.js"></script>
 
 </head>
 <body ng-app="MyRetailApp">
-    <a href="#!">Home</a>
+    <!-- <a href="#!">Home</a> -->
+    <a href="#!">All Items</a>
     <ng-view></ng-view>
 </body>
 </html>
