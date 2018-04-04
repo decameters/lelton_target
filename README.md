@@ -8,13 +8,13 @@ myRetail is a RESTful service that can retrieve product and price details by ID.
 * Node.js
 * AngularJS Material
 
-## Getting Started
+<!-- ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/) -->
 
 <!-- ### Installing -->
 
