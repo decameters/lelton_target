@@ -3,6 +3,8 @@ app.service('MyRetailService', ['$http', function ($http) {
 
     self.products = { list: [] };
 
+    self.api = { list: [] };
+
     self.productdetail = { list: [] };
 
     self.getProducts = function () {
@@ -29,6 +31,14 @@ app.service('MyRetailService', ['$http', function ($http) {
             self.productdetail.list = response.data;
         })
     }
+
+    $http({
+        method: 'GET',
+        url: '/products/api'
+    }).then(function (response) {
+        console.log('response', response);
+        self.api.list = response.data.product;
+    })
 
     
 

@@ -2,6 +2,7 @@ app.controller('MyRetailController', ['MyRetailService', '$routeParams', functio
     var self = this;
 
     self.products = MyRetailService.products;
+    self.api = MyRetailService.api;
     self.productdetail = MyRetailService.productdetail;
 
     self.productId = $routeParams.id
