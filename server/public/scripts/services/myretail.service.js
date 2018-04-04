@@ -3,7 +3,7 @@ app.service('MyRetailService', ['$http', function ($http) {
 
     self.products = { list: [] };
 
-    // self.moviedetail = { list: [] };
+    self.productdetail = { list: [] };
 
     self.getProducts = function () {
 
@@ -13,6 +13,20 @@ app.service('MyRetailService', ['$http', function ($http) {
         }).then(function (response) {
             console.log('response', response);
             self.products.list = response.data;
+        })
+    }
+
+    self.getProductDetails = function (id) {
+
+        console.log('in getProductDetails');
+        console.log(id);
+        
+        $http({
+            method: 'GET',
+            url: '/products/' + id
+        }).then(function (response) {
+            console.log('response', response);
+            self.productdetail.list = response.data;
         })
     }
 

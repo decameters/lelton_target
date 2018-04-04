@@ -1,0 +1,11 @@
+{{vm}}
+
+
+{{vm.productdetail.list}}
+
+
+<p ng-repeat="productdetail in vm.productdetail.list">
+    {{productdetail.title}}, Product ID: {{productdetail.id}}
+    <br>
+    ${{productdetail.current_price.value}} {{productdetail.current_price.currency_code}}
+</p>
