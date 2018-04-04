@@ -1,6 +1,6 @@
 app.controller('MyRetailController', ['MyRetailService', function (MyRetailService) {
     var self = this;
 
-    self.itmes = MyRetailService.items;
+    self.items = MyRetailService.items;
     MyRetailService.getItems();
 }])
