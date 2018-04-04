@@ -3,7 +3,6 @@ myRetail is a RESTful service that can retrieve product and price details by ID.
 
 ## Built With
 * MongoDB
-* Mongoose
 * Express
 * AngularJS
 * Node.js
