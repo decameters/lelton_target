@@ -5,6 +5,8 @@ app.service('MyRetailService', ['$http', function ($http) {
 
     self.api = { list: [] };
 
+    self.apidetails = { list: [] };
+
     self.productdetail = { list: [] };
 
     self.getProducts = function () {
@@ -36,14 +38,34 @@ app.service('MyRetailService', ['$http', function ($http) {
         })
     }
 
-    $http({
-        method: 'GET',
-        url: '/products/api'
-    }).then(function (response) {
-        console.log('response', response);
-        self.api.list = response.data.product.item;
-    })
+    self.getApiProducts = function () {
 
+        $http({
+            method: 'GET',
+            url: '/products/api'
+        }).then(function (response) {
+            console.log('response', response);
+            self.api.list = response.data.product.item;
+        })
+    }
+
+    // self.getApiProductDetails = function (productId) {
+
+    //     console.log('in getApiProductDetails');
+    //     console.log('API productId is ', productId);
+
+    //     $http({
+    //         method: 'GET',
+    //         url: '/products/apidetails/' + productId
+    //     }).then(function (response) {
+    //         console.log('response', response);
+    //         if (response.data[0].product.item.tcin == productId){
+    //             self.apidetails.list = response.data.product.item;
+    //         } else {
+    //             console.log('no no no');
+    //         }
+    //     })
+    // }
     
 
 }]);

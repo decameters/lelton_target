@@ -3,6 +3,15 @@ use myRetail;
 db.createCollection('products');
 
 db.products.insert({
+    id : 3860428 ,
+    title : "The Big Lebowski" ,
+    current_price : {
+        value : 15.49 ,
+        currency_code : "USD" ,
+    }
+});
+
+db.products.insert({
     id : 13860431 ,
     title : "TRON" ,
     current_price : {

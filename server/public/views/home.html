@@ -6,12 +6,14 @@
     <li><a href="#!/{{apiproduct.list.tcin}}">{{apiproduct.product_description.title}}</a></li>
 </ul> -->
 
+<!-- ignore above haha -->
+
 <div ng-repeat="product in mc.products.list">
-    <pre>{{product | json}}</pre>
+    <pre>{{product.id | json}}</pre>
     <a href="#!/{{product.id}}"><button on-click="mc.getProductDetails(productId);">see details</button></a>
 </div>
 
 <div ng-repeat="apiproduct in mc.api.list">
     <pre>{{apiproduct | json}}</pre>
 </div>
-    <a href="#!/{{mc.api.list.tcin}}"><button on-click="mc.getProductDetails(productId);">see details</button></a>
+    <a href="#!/{{mc.api.list.tcin}}"><button on-click="mc.getProductDetails(mc.api.list.tcin);">see details</button></a>

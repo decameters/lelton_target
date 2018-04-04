@@ -19,9 +19,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 <!-- ### Installing -->
 
+## Notes
+* "The Big Lebowski" is the only information on the home page pulling in from the API, the rest is mock data from the NoSQL database.
+
 ## Base Functionality
 - [x] Responds to an HTTP GET request at /products/{id} and delivers product data as JSON. 
-- [ ] Performs an HTTP GET to retrieve the product name from an external API.
+- [x] Performs an HTTP GET to retrieve the product name from an external API.
 - [x] Reads pricing information from a NoSQL data store and combines it with the product id and name from the HTTP request into a single response.
 
 ## Stretch Goals

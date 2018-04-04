@@ -35,6 +35,26 @@ router.get('/api', function (req, res) {
     });
 })
 
+router.get('/apidetails', function (req, res) {
+
+    // var keyword = req.query.q;
+
+    var fullRequestUrl = 'http://redsky.target.com/v2/pdp/tcin/13860428?excludes=taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics';
+    // fullRequestUrl += '?api_key=' + process.env.GIPHY_API_KEY; // order of these doesn't matter except the first one has to be a question mark
+    // // start of the query string
+    // fullRequestUrl += '&q=' + keyword;
+
+    request(fullRequestUrl, function (error, response, body) {
+        if (error) {
+            console.log('error making Redsky API request');
+            res.sendStatus(500);
+        } else {
+            res.send(body);
+        }
+    });
+})
+
+
 // router.get('/', function (req, res) {
     
 //     MyRetail.find({}, function (errorMakingDatabaseQuery, data) {
