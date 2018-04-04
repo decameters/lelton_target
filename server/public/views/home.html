@@ -1,19 +1,13 @@
-<!-- <pre>{{mc | json}}</pre>
-<ul ng-repeat="product in mc.products.list">
-    <li>{{product.title}}</li><a href="#!/{{product.id}}"><button on-click="mc.getProductDetails(productId);">see details</button></a>
-</ul>
-<ul ng-repeat="apiproduct in mc.api.list">
-    <li><a href="#!/{{apiproduct.list.tcin}}">{{apiproduct.product_description.title}}</a></li>
-</ul> -->
+<!-- CODE BELOW WILL PULL IN ALL AVAIL PRODUCTS, INCLUDING FROM DB -->
 
-<!-- ignore above haha -->
-
-<div ng-repeat="product in mc.products.list">
-    <pre>{{product.id | json}}</pre>
+<!-- <div ng-repeat="product in mc.products.list">
+    <pre>{{product.title | json}}</pre>
     <a href="#!/{{product.id}}"><button on-click="mc.getProductDetails(productId);">see details</button></a>
-</div>
+</div> -->
+
+<!-- JUST PULLS PRODUCTS FROM API -->
 
 <div ng-repeat="apiproduct in mc.api.list">
-    <pre>{{apiproduct | json}}</pre>
+    <pre>{{apiproduct.title | json}}</pre>
 </div>
     <a href="#!/{{mc.api.list.tcin}}"><button on-click="mc.getProductDetails(mc.api.list.tcin);">see details</button></a>
