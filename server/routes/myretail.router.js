@@ -10,6 +10,7 @@ router.get('/', function (req, res) {
             res.sendStatus(500);
         } else {
             res.send(data);
+            // res.json(data);
         }
     })
 });
@@ -23,6 +24,7 @@ router.get('/:id', function (req, res) {
             res.sendStatus(500);
         } else {
             res.send(data);
+            // res.json(data);
         }
     })
 });
