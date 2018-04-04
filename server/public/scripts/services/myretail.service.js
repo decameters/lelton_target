@@ -18,17 +18,21 @@ app.service('MyRetailService', ['$http', function ($http) {
         })
     }
 
-    self.getProductDetails = function (id) {
+    self.getProductDetails = function (productId) {
 
         console.log('in getProductDetails');
-        console.log(id);
+        console.log('productId is ', productId);
         
         $http({
             method: 'GET',
-            url: '/products/' + id
+            url: '/products/' + productId
         }).then(function (response) {
-            console.log('response', response);
+            console.log('response', response.data);
+            if (response.data[0].id == productId){
             self.productdetail.list = response.data;
+            } else {
+                console.log('NOPE');
+            }
         })
     }
 
@@ -37,7 +41,7 @@ app.service('MyRetailService', ['$http', function ($http) {
         url: '/products/api'
     }).then(function (response) {
         console.log('response', response);
-        self.api.list = response.data.product;
+        self.api.list = response.data.product.item;
     })
 
     

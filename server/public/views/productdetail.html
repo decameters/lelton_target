@@ -1,10 +1,11 @@
-{{vm}}
+{{dc}}
 
 
-{{vm.productdetail.list}}
+{{dc.productdetail.list}}
 
+<!-- pull ID and name from API (if avail) and then price from DB. -->
 
-<p ng-repeat="productdetail in vm.productdetail.list">
+<p ng-repeat="productdetail in dc.productdetail.list">
     {{productdetail.title}}, Product ID: {{productdetail.id}}
     <br>
     ${{productdetail.current_price.value}} {{productdetail.current_price.currency_code}}

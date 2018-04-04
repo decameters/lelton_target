@@ -48,19 +48,19 @@ router.get('/api', function (req, res) {
 //     })
 // });
 
-// router.get('/:id', function (req, res) {
-//     console.log(req.params.id);
+router.get('/:id', function (req, res) {
+    console.log(req.params.id);
     
-//     MyRetail.find({id : req.params.id}, function (errorMakingDatabaseQuery, data) {
-//         if (errorMakingDatabaseQuery) {
-//             console.log('error with MyRetail:id find', errorMakingDatabaseQuery);
-//             res.sendStatus(500);
-//         } else {
-//             res.send(data);
-//             // res.json(data);
-//         }
-//     })
-// });
+    MyRetail.find({id : req.params.id}, function (errorMakingDatabaseQuery, data) {
+        if (errorMakingDatabaseQuery) {
+            console.log('error with MyRetail:id find', errorMakingDatabaseQuery);
+            res.sendStatus(500);
+        } else {
+            res.send(data);
+            // res.json(data);
+        }
+    })
+});
 
 // router.post('/', function (req, res) {
 //     var addMovie = new Movie(req.body);

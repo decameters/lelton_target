@@ -1,3 +1,7 @@
-{{vm}}
-<ul ng-repeat="product in vm.products.list">
-    <li><a href="#!/{{product.id}}">{{product.title}}</a></li>
+<pre>{{mc | json}}</pre>
+<ul ng-repeat="product in mc.products.list">
+    <li>{{product.title}}</li><a href="#!/{{product.id}}"><button on-click="mc.getProductDetails(productId);">see details</button></a>
+</ul>
+<ul ng-repeat="apiproduct in mc.api.list">
+    <li><a href="#!/{{apiproduct.list.tcin}}">{{apiproduct.product_description.title}}</a></li>
+</ul>
