@@ -17,6 +17,7 @@
 // module.exports = {
 //     connect: connect
 // };
+function connect(){
 
 var mongoose = require('mongoose');
 
@@ -29,11 +30,11 @@ if(process.env.MONGODB_URI != undefined) {
     mongoURI = process.env.MONGODB_URI;
 } else {
     // use the local database server
-    mongoURI = 'mongodb://localhost:27017/databasename';
+    mongoURI = 'mongodb://localhost:27017/myRetail';
 }
 
 mongoose.connect(mongoURI, {
-  useMongoClient: true
+//   useMongoClient: true
 });
 
 mongoose.connection.on('error', function(err){
@@ -46,5 +47,8 @@ mongoose.connection.on('error', function(err){
 mongoose.connection.on('open', function(){
    console.log("Connected to Mongo!");
 });
+}
 
-module.exports = mongoose;
+module.exports = {
+    connect: connect
+}
