@@ -1,22 +1,30 @@
 # myRetail RESTful Service
 myRetail is a RESTful service that can retrieve product and price details by ID.
 
+A live demo can be seen [here](https://lelton-myretail.herokuapp.com/#!/).
+
 ## Built With
 * MongoDB
+* Mongoose
 * Express
 * AngularJS
 * Node.js
 * AngularJS Material
 
-<!-- ## Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) -->
+- [Node.js](https://nodejs.org/en/)
 
-<!-- ### Installing -->
+### Installing
+* Clone repository from Github.
+* Run ```npm install```
+* Start mongo if not running already by using ```mongod```
+* Run ```npm start```
+* Copy and paste ```myretail.js``` file to setup basic mock data.
 
 ## Notes
 * "The Big Lebowski (Blu Ray)" is the only information on the home page pulling in from the API, the rest is mock data from the NoSQL database.
