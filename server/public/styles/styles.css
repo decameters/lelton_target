@@ -1,1 +1,32 @@
+.fake-button {
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:none;
+    border: none;
+    outline: none;
+    background-color: tomato;
+    padding: 10px;
+    color: white;
+}
 
+.titles {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 15px;
+}
+
+a {
+    color: tomato;
+}
+
+a:hover {
+    color: white;
+    background-color: tomato;
+}
