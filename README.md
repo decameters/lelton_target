@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 <!-- ### Installing -->
 
 ## Notes
-* "The Big Lebowski" is the only information on the home page pulling in from the API, the rest (if you choose to uncomment it :) ) is mock data from the NoSQL database.
+* "The Big Lebowski (Blu Ray)" is the only information on the home page pulling in from the API, the rest is mock data from the NoSQL database.
 
 ## Base Functionality
 - [x] Responds to an HTTP GET request at /products/{id} and delivers product data as JSON. 
